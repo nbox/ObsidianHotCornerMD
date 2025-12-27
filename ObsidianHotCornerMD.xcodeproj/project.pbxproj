@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEAAB6B72DF5F94500369FB3 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = CEAAB6B62DF5F94500369FB3 /* KeyboardShortcuts */; };
+		CEC442F22E11E1DE00740ECA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC442F12E11E1DB00740ECA /* Info.plist */; };
+		CEF923CB2DF10C0F00E6B0F7 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEF923CA2DF10C0F00E6B0F7 /* MarkdownUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEF923252DF0BAD500E6B0F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF9230B2DF0BAD300E6B0F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF923122DF0BAD300E6B0F7;
+			remoteInfo = ObsidianHotCornerPreview;
+		};
+		CEF9232F2DF0BAD500E6B0F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF9230B2DF0BAD300E6B0F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF923122DF0BAD300E6B0F7;
+			remoteInfo = ObsidianHotCornerPreview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEC442F12E11E1DB00740ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CEF923132DF0BAD300E6B0F7 /* ObsidianHotCornerMD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObsidianHotCornerMD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF923242DF0BAD500E6B0F7 /* ObsidianHotCornerMDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObsidianHotCornerMDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF9232E2DF0BAD500E6B0F7 /* ObsidianHotCornerMDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObsidianHotCornerMDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CEC4425E2E0DCFE500740ECA /* assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = assets;
+			sourceTree = "<group>";
+		};
+		CEF923152DF0BAD300E6B0F7 /* ObsidianHotCornerMD */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ObsidianHotCornerMD;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF923102DF0BAD300E6B0F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF923CB2DF10C0F00E6B0F7 /* MarkdownUI in Frameworks */,
+				CEAAB6B72DF5F94500369FB3 /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF923212DF0BAD500E6B0F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9232B2DF0BAD500E6B0F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEF9230A2DF0BAD300E6B0F7 = {
+			isa = PBXGroup;
+			children = (
+				CEC442F12E11E1DB00740ECA /* Info.plist */,
+				CEC4425E2E0DCFE500740ECA /* assets */,
+				CEF923152DF0BAD300E6B0F7 /* ObsidianHotCornerMD */,
+				CEF923142DF0BAD300E6B0F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF923142DF0BAD300E6B0F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF923132DF0BAD300E6B0F7 /* ObsidianHotCornerMD.app */,
+				CEF923242DF0BAD500E6B0F7 /* ObsidianHotCornerMDTests.xctest */,
+				CEF9232E2DF0BAD500E6B0F7 /* ObsidianHotCornerMDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF923122DF0BAD300E6B0F7 /* ObsidianHotCornerMD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF923382DF0BAD500E6B0F7 /* Build configuration list for PBXNativeTarget "ObsidianHotCornerMD" */;
+			buildPhases = (
+				CEF9230F2DF0BAD300E6B0F7 /* Sources */,
+				CEF923102DF0BAD300E6B0F7 /* Frameworks */,
+				CEF923112DF0BAD300E6B0F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CEC4425E2E0DCFE500740ECA /* assets */,
+				CEF923152DF0BAD300E6B0F7 /* ObsidianHotCornerMD */,
+			);
+			name = ObsidianHotCornerMD;
+			packageProductDependencies = (
+				CEF923CA2DF10C0F00E6B0F7 /* MarkdownUI */,
+				CEAAB6B62DF5F94500369FB3 /* KeyboardShortcuts */,
+			);
+			productName = ObsidianHotCornerPreview;
+			productReference = CEF923132DF0BAD300E6B0F7 /* ObsidianHotCornerMD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEF923232DF0BAD500E6B0F7 /* ObsidianHotCornerMDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF9233B2DF0BAD500E6B0F7 /* Build configuration list for PBXNativeTarget "ObsidianHotCornerMDTests" */;
+			buildPhases = (
+				CEF923202DF0BAD500E6B0F7 /* Sources */,
+				CEF923212DF0BAD500E6B0F7 /* Frameworks */,
+				CEF923222DF0BAD500E6B0F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF923262DF0BAD500E6B0F7 /* PBXTargetDependency */,
+			);
+			name = ObsidianHotCornerMDTests;
+			packageProductDependencies = (
+			);
+			productName = ObsidianHotCornerPreviewTests;
+			productReference = CEF923242DF0BAD500E6B0F7 /* ObsidianHotCornerMDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CEF9232D2DF0BAD500E6B0F7 /* ObsidianHotCornerMDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF9233E2DF0BAD500E6B0F7 /* Build configuration list for PBXNativeTarget "ObsidianHotCornerMDUITests" */;
+			buildPhases = (
+				CEF9232A2DF0BAD500E6B0F7 /* Sources */,
+				CEF9232B2DF0BAD500E6B0F7 /* Frameworks */,
+				CEF9232C2DF0BAD500E6B0F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEF923302DF0BAD500E6B0F7 /* PBXTargetDependency */,
+			);
+			name = ObsidianHotCornerMDUITests;
+			packageProductDependencies = (
+			);
+			productName = ObsidianHotCornerPreviewUITests;
+			productReference = CEF9232E2DF0BAD500E6B0F7 /* ObsidianHotCornerMDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF9230B2DF0BAD300E6B0F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 2600;
+				ORGANIZATIONNAME = "https://github.com/nbox";
+				TargetAttributes = {
+					CEF923122DF0BAD300E6B0F7 = {
+						CreatedOnToolsVersion = 16.1;
+						LastSwiftMigration = 1610;
+					};
+					CEF923232DF0BAD500E6B0F7 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CEF923122DF0BAD300E6B0F7;
+					};
+					CEF9232D2DF0BAD500E6B0F7 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = CEF923122DF0BAD300E6B0F7;
+					};
+				};
+			};
+			buildConfigurationList = CEF9230E2DF0BAD300E6B0F7 /* Build configuration list for PBXProject "ObsidianHotCornerMD" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEF9230A2DF0BAD300E6B0F7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CEF923C92DF10C0F00E6B0F7 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+				CEAAB6B52DF5F8B400369FB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CEF923142DF0BAD300E6B0F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF923122DF0BAD300E6B0F7 /* ObsidianHotCornerMD */,
+				CEF923232DF0BAD500E6B0F7 /* ObsidianHotCornerMDTests */,
+				CEF9232D2DF0BAD500E6B0F7 /* ObsidianHotCornerMDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF923112DF0BAD300E6B0F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC442F22E11E1DE00740ECA /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF923222DF0BAD500E6B0F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9232C2DF0BAD500E6B0F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF9230F2DF0BAD300E6B0F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF923202DF0BAD500E6B0F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9232A2DF0BAD500E6B0F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEF923262DF0BAD500E6B0F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF923122DF0BAD300E6B0F7 /* ObsidianHotCornerMD */;
+			targetProxy = CEF923252DF0BAD500E6B0F7 /* PBXContainerItemProxy */;
+		};
+		CEF923302DF0BAD500E6B0F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF923122DF0BAD300E6B0F7 /* ObsidianHotCornerMD */;
+			targetProxy = CEF9232F2DF0BAD500E6B0F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CEF923362DF0BAD500E6B0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEF923372DF0BAD500E6B0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CEF923392DF0BAD500E6B0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ObsidianHotCornerMD/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Obsidian Hot Corner MD";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "The application requires access to mouse and keyboard events to monitor hot corners.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nbox.ObsidianHotCornerMD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CEF9233A2DF0BAD500E6B0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ObsidianHotCornerMD/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Obsidian Hot Corner MD";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSInputMonitoringUsageDescription = "The application requires access to mouse and keyboard events to monitor hot corners.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nbox.ObsidianHotCornerMD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CEF9233C2DF0BAD500E6B0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UserApp.ObsidianHotCornerPreviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObsidianHotCornerMD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObsidianHotCornerMD";
+			};
+			name = Debug;
+		};
+		CEF9233D2DF0BAD500E6B0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UserApp.ObsidianHotCornerPreviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObsidianHotCornerMD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ObsidianHotCornerMD";
+			};
+			name = Release;
+		};
+		CEF9233F2DF0BAD500E6B0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UserApp.ObsidianHotCornerPreviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ObsidianHotCornerPreview;
+			};
+			name = Debug;
+		};
+		CEF923402DF0BAD500E6B0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = UserApp.ObsidianHotCornerPreviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ObsidianHotCornerPreview;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF9230E2DF0BAD300E6B0F7 /* Build configuration list for PBXProject "ObsidianHotCornerMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF923362DF0BAD500E6B0F7 /* Debug */,
+				CEF923372DF0BAD500E6B0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF923382DF0BAD500E6B0F7 /* Build configuration list for PBXNativeTarget "ObsidianHotCornerMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF923392DF0BAD500E6B0F7 /* Debug */,
+				CEF9233A2DF0BAD500E6B0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF9233B2DF0BAD500E6B0F7 /* Build configuration list for PBXNativeTarget "ObsidianHotCornerMDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF9233C2DF0BAD500E6B0F7 /* Debug */,
+				CEF9233D2DF0BAD500E6B0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF9233E2DF0BAD500E6B0F7 /* Build configuration list for PBXNativeTarget "ObsidianHotCornerMDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF9233F2DF0BAD500E6B0F7 /* Debug */,
+				CEF923402DF0BAD500E6B0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEAAB6B52DF5F8B400369FB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		CEF923C92DF10C0F00E6B0F7 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEAAB6B62DF5F94500369FB3 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEAAB6B52DF5F8B400369FB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		CEF923CA2DF10C0F00E6B0F7 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEF923C92DF10C0F00E6B0F7 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CEF9230B2DF0BAD300E6B0F7 /* Project object */;
+}

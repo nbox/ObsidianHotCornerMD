@@ -1,0 +1,33 @@
+name: macOS Build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s "/Applications/Xcode.app"
+
+      - name: Resolve Swift packages
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -project ObsidianHotCornerMD.xcodeproj \
+            -scheme ObsidianHotCornerMD
+
+      - name: Build (Release)
+        run: |
+          xcodebuild \
+            -project ObsidianHotCornerMD.xcodeproj \
+            -scheme ObsidianHotCornerMD \
+            -configuration Release \
+            -destination 'platform=macOS' \
+            -quiet \
+            build

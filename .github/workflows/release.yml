@@ -1,0 +1,82 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-release:
+    runs-on: macos-latest
+    env:
+      IS_TAG_BUILD: ${{ startsWith(github.ref, 'refs/tags/') }}
+      SHORT_SHA: ${{ github.sha }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s "/Applications/Xcode.app"
+          xcodebuild -version
+
+      - name: Resolve Swift packages
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -project ObsidianHotCornerMD.xcodeproj \
+            -scheme ObsidianHotCornerMD
+
+      - name: Archive (Release)
+        run: |
+          xcodebuild \
+            -project ObsidianHotCornerMD.xcodeproj \
+            -scheme ObsidianHotCornerMD \
+            -configuration Release \
+            -destination 'generic/platform=macOS' \
+            -archivePath build/ObsidianHotCornerMD.xcarchive \
+            -quiet \
+            archive
+
+      - name: Create DMG
+        id: dmg
+        run: |
+          set -euo pipefail
+          APP_PATH="build/ObsidianHotCornerMD.xcarchive/Products/Applications/ObsidianHotCornerMD.app"
+          if [[ "${IS_TAG_BUILD}" == "true" ]]; then
+            VERSION="${GITHUB_REF_NAME#v}"
+            TAG_NAME="${GITHUB_REF_NAME}"
+          else
+            VERSION="main-${SHORT_SHA:0:7}"
+            TAG_NAME="auto-${SHORT_SHA:0:7}"
+          fi
+          DMG_NAME="ObsidianHotCornerMD-${VERSION}.dmg"
+          STAGING="build/dmg-root"
+          rm -rf "$STAGING"
+          mkdir -p "$STAGING"
+          # Copy app and create Applications symlink for convenience
+          cp -R "$APP_PATH" "$STAGING/"
+          ln -s /Applications "$STAGING/Applications" || true
+          hdiutil create -volname "ObsidianHotCornerMD" -srcfolder "$STAGING" -ov -format UDZO "build/${DMG_NAME}"
+          {
+            echo "dmg=build/${DMG_NAME}"
+            echo "tag_name=${TAG_NAME}"
+            echo "release_name=ObsidianHotCornerMD ${VERSION}"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Upload Release DMG
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ steps.dmg.outputs.dmg }}
+          tag_name: ${{ steps.dmg.outputs.tag_name }}
+          name: ${{ steps.dmg.outputs.release_name }}
+          draft: false
+          prerelease: ${{ !startsWith(github.ref, 'refs/tags/') }}
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

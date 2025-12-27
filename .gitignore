@@ -1,0 +1,87 @@
+# Xcode
+
+# Build products
+
+build/
+DerivedData/
+
+# Xcode workspace and project user settings
+
+/*.xcworkspace
+xcuserdata/
+*.xcuserdatad
+
+# Scheme management
+# Keep shared schemes tracked for CI. User-specific schemes remain ignored via `xcuserdata/`.
+
+# Playground
+
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+
+.build/
+
+# CocoaPods
+
+Pods/
+
+# Carthage
+
+Carthage/Build/
+
+# fastlane metadata
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# macOS
+
+.DS_Store
+
+# User-specific files
+
+*.swp
+*~
+
+# Crashlytics
+
+fabric.properties
+
+# SwiftPM
+
+/.swiftpm/
+
+# Archives
+
+*.xcarchive
+
+# Code signing
+
+*.mobileprovision
+*.provprofile
+
+# Bundled DMG
+
+*.dmg
+
+# Jetbrains
+
+.idea/
+*.iml
+
+# Temporary files
+
+tmp/
+*/tmp/
+
+# Other
+
+/.env
+
+# Additional Xcode artifacts
+*.xcuserstate
+*.xccheckout

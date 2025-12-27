@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.nbox.ObsidianHotCornerMD</string>              <!-- Unique ID of your application -->
+    <key>CFBundleName</key>
+    <string>ObsidianHotCornerMD</string>                            <!-- Application name -->
+    <key>CFBundleVersion</key>
+    <string>1</string>                                             <!-- Build number -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>                                           <!-- App version -->
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>                                 <!-- Main application class (default) -->
+    <!-- Input monitoring permissions -->
+    <key>NSInputMonitoringUsageDescription</key>
+    <string>The application requires access to mouse and keyboard events to monitor hot corners.</string>
+    <!-- Add other permission descriptions if needed -->
+</dict>
+</plist>
